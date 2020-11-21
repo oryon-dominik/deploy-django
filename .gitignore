@@ -1,5 +1,7 @@
 .*
 .idea
+!.github
+!.flake8
 !.gitignore
 poetry.lock
 
