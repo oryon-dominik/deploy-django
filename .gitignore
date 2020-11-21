@@ -1,0 +1,25 @@
+## GIT is ignoring... 
+
+# all logs
+*.log
+
+# local-config
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+
+# vscode
+.vscode
+*.code-workspace
+
+# ===================
+## Python
+# ===================
+
+# precompiled
+__pycache__/
+*.py[cod]
+.pytest_cache
