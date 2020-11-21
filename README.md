@@ -27,7 +27,7 @@ the project to deploy
 - implements our reusable app as module
 - gives an endpoint, e.g. /deploy-hash/
 - generate a "secret-token" for the challenge/response
-    
+
     import secrets
     secrets.hex(32)
 
@@ -38,3 +38,7 @@ GET /deploy/ -> get a "challenge" back (e.g a random number/string)
 The response will get generated with "auth token" and "challenge" (e.g.: SHA(challenge + secret))
 
 The external service does a POST to /deploy/ with the challenges response
+
+## history
+
+* v0.0.1 - init ;)
