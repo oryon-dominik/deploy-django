@@ -2,6 +2,7 @@
 
 a project from the *Virtual Autumn Sprint 2020* of the *Python Meeting Düsseldorf* - pyddf
 
+to deploy a project to an external service
 
 ## CI/CD -resources
 Implement a CI/CD flow for a django project using GitHub Actions including deployment to a root server with GitHub Secrets.
@@ -24,6 +25,16 @@ GitHub Developer Secrets: https://developer.github.com/v3/actions/secrets/
 the project to deploy
 
 - implements our reusable app as module
-- gives 
+- gives an endpoint, e.g. /deploy-hash/
+- generate a "secret-token" for the challenge/response
+    
+    import secrets
+    secrets.hex(32)
 
+## external service
 
+GET /deploy/ -> get a "challenge" back (e.g a random number/string)
+
+The response will get generated with "auth token" and "challenge" (e.g.: SHA(challenge + secret))
+
+The external service does a POST to /deploy/ with the challenges response
