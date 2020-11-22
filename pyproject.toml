@@ -12,6 +12,9 @@ license = "MIT"
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0.0"
 django = ">=2.2"
+typer = "^0.3.2"
+# We can't install v5 until https://github.com/python-poetry/poetry/issues/3320 is fixed!
+bx_py_utils = "==0.0.4"  # https://github.com/boxine/bx_py_utils
 
 [tool.poetry.dev-dependencies]
 poetry-publish = "*"  # https://github.com/jedie/poetry-publish

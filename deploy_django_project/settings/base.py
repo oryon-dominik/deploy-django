@@ -8,6 +8,9 @@ from pathlib import Path as __Path
 from django.utils.translation import gettext_lazy as _
 
 
+from deploy_django.app_settings import *
+
+
 ###############################################################################
 
 # Build paths relative to the project root:
